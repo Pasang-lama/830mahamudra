@@ -1,0 +1,29 @@
+.banner{
+    height: 100vh;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        .banner-heading{
+            font-size: 100px;
+            font-family: $heading-fonts;
+        }
+        .banner-des{
+            font-size: 24px;
+            font-family: $general-fonts;
+            font-weight: 500;
+        }
+        .custom-btn{
+            margin-top: 20px;
+        }
+    }
+}
