@@ -99,6 +99,76 @@ figure img {
   margin-top: 20px;
 }
 
+.tour-destination-slider .destination-card {
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+}
+.tour-destination-slider .destination-card::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.tour-destination-slider .destination-card img {
+  height: 100%;
+  width: 100%;
+}
+.tour-destination-slider .destination-card .title {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+.tour-destination-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.tour-destination-slider .slick-dots li {
+  background-color: #D9D9D9;
+  height: 10px;
+  width: 35px;
+  border-radius: 5px;
+}
+.tour-destination-slider .slick-dots li button {
+  display: none;
+}
+.tour-destination-slider .slick-dots .slick-active {
+  background-color: #F08E12;
+}
+
+.video-section {
+  background-image: url("../images/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px 0px;
+  position: relative;
+}
+.video-section .top-decor,
+.video-section .bottom-decor {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.video-section .top-decor {
+  top: 0px;
+}
+.video-section .bottom-decor {
+  bottom: 0px;
+}
+
 header {
   position: fixed;
   left: 0px;

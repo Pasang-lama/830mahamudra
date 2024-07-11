@@ -1,29 +1,114 @@
-.banner{
+.banner {
     height: 100vh;
     position: relative;
-    img{
+
+    img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    .banner-content{
+
+    .banner-content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         color: white;
-        .banner-heading{
+
+        .banner-heading {
             font-size: 100px;
             font-family: $heading-fonts;
         }
-        .banner-des{
+
+        .banner-des {
             font-size: 24px;
             font-family: $general-fonts;
             font-weight: 500;
         }
-        .custom-btn{
+
+        .custom-btn {
             margin-top: 20px;
         }
+    }
+}
+
+.tour-destination-slider {
+    .destination-card {
+        height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        margin: 20px;
+
+        &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .title {
+            position: absolute;
+            z-index: 2;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+            background-color: #D9D9D9;
+            height: 10px;
+            width: 35px;
+            border-radius: 5px;
+
+            button {
+
+                display: none;
+            }
+        }
+
+        .slick-active {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.video-section {
+    background-image: url("../images/video.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 250px 0px;
+    position: relative;
+
+    .top-decor,
+    .bottom-decor {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+    .top-decor{
+        top: 0px;
+    }
+    .bottom-decor{
+        bottom: 0px;
     }
 }
