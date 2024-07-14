@@ -1,0 +1,22 @@
+.breadcrumb{
+    background-image: url("../images/breadcrumb.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30vh 0px;
+    position: relative;
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.468);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .page-tittle{
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 99;
+    }
+}

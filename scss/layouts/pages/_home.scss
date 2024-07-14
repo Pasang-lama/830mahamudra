@@ -33,40 +33,42 @@
     }
 }
 
-.tour-destination-slider {
-    .destination-card {
-        height: 350px;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-        margin: 20px;
 
-        &::after {
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
+.destination-card {
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
 
-        img {
-            height: 100%;
-            width: 100%;
-        }
-
-        .title {
-            position: absolute;
-            z-index: 2;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            color: white;
-            font-weight: 500;
-            font-size: 24px;
-        }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .title {
+        position: absolute;
+        z-index: 2;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+.tour-destination-slider {
+ 
 
     .slick-dots {
         display: flex;

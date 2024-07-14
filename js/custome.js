@@ -17,6 +17,26 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
     });
+
+    $('.main-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.prev-slider'
+      });
+
+      $('.prev-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.main-slider',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+
+
+
   });
 
   $(function() {

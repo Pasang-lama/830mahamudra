@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahamudra Travels</title>
-    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <a href=""><img class="logo" src="images/logo.png" alt="" /></a>
-          </div>
-          <div class="col-4">
-            <ul class="nav-bar">
-              <li><a href="">Home</a></li>
-              <li><a href="">Tour Packages</a></li>
-              <li><a href="">Travel blogs</a></li>
-            </ul>
-          </div>
-          <div class="col-4 d-flex justify-content-end right-btn">
-            <a href="" class="custom-btn">Contact us</a>
-            <button><i class="bi bi-list"></i></button>
-          </div>
-        </div>
-      </div>
-    </header>
+<?php include("includes/header.php")?>
 
     <section class="banner">
       <img src="images/img (2).png" alt="" />
@@ -69,7 +34,7 @@
             soluta natus inventore corporis omnis ut! Ex, facere maiores rerum
             illum minus eius rem quos ipsam ad perspiciatis distinctio!
           </p>
-          <a href="" class="mt-3 custom-btn">Explore Now</a>
+          <a href="about.php" class="mt-3 custom-btn">Explore Now</a>
         </div>
         <div class="col-lg-6 col-md-12">
           <figure>
@@ -78,6 +43,8 @@
         </div>
       </div>
     </section>
+
+    
 
     <section class="tour-destination mt-5 container">
       <div class="d-flex justify-content-between align-items-center mb-5">
@@ -91,10 +58,10 @@
       </div>
       <div class="tour-destination-slider">
         <div class="destination-card">
-          <a href="">
+          <a href="destination.php">
             <img src="images/destination.avif" alt="" />
           </a>
-          <h3 class="title"><a href="">Nepal</a></h3>
+          <h3 class="title"><a href="destination.php">Nepal</a></h3>
         </div>
         <div class="destination-card">
           <a href="">
@@ -157,10 +124,5 @@
         </div>
       </div>
     </section>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custome.js"></script>
-  </body>
-</html>
+    
+    <?php include("includes/footer.php")?>

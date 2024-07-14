@@ -1,0 +1,46 @@
+.main-slider {
+    figure {
+        height: 400px;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.prev-slider {
+    figure {
+        height: 100px;
+        width: 100%;
+        margin: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.accordion-button {
+    font-size: 16px;
+    color: $secondary-color;
+    font-weight: 500;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}

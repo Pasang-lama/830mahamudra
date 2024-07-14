@@ -68,6 +68,29 @@ figure img {
   font-weight: 600;
 }
 
+.breadcrumb {
+  background-image: url("../images/breadcrumb.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30vh 0px;
+  position: relative;
+}
+.breadcrumb::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.breadcrumb .page-tittle {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 99;
+}
+
 .banner {
   height: 100vh;
   position: relative;
@@ -99,14 +122,14 @@ figure img {
   margin-top: 20px;
 }
 
-.tour-destination-slider .destination-card {
+.destination-card {
   height: 350px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   margin: 20px;
 }
-.tour-destination-slider .destination-card::after {
+.destination-card::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -115,11 +138,11 @@ figure img {
   top: 0px;
   left: 0px;
 }
-.tour-destination-slider .destination-card img {
+.destination-card img {
   height: 100%;
   width: 100%;
 }
-.tour-destination-slider .destination-card .title {
+.destination-card .title {
   position: absolute;
   z-index: 2;
   bottom: 20px;
@@ -129,6 +152,7 @@ figure img {
   font-weight: 500;
   font-size: 24px;
 }
+
 .tour-destination-slider .slick-dots {
   display: flex;
   justify-content: center;
@@ -167,6 +191,49 @@ figure img {
 }
 .video-section .bottom-decor {
   bottom: 0px;
+}
+
+.main-slider figure {
+  height: 400px;
+  width: 100%;
+}
+.main-slider figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-slider figure {
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+}
+.prev-slider figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.accordion-button {
+  font-size: 16px;
+  color: #1C3B70;
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 header {
@@ -224,4 +291,48 @@ header.scrolled .right-btn .custom-btn {
 }
 header.scrolled .right-btn button {
   color: black;
+}
+
+footer {
+  position: relative;
+  background-image: url("../images/footer.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+}
+footer::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+footer .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+footer .container .footer-logo {
+  filter: brightness(0) invert(1);
+  margin-bottom: 20px;
+}
+footer .container .col-heading {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+footer .container ul {
+  padding-left: 0px !important;
+}
+footer .container ul li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+}
+footer .container ul li:last-child {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
