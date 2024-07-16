@@ -293,6 +293,45 @@ header.scrolled .right-btn button {
   color: black;
 }
 
+.mysidenav {
+  height: 0px;
+  display: none;
+  padding: 100px 0px;
+}
+.mysidenav .container .col-heading {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.mysidenav .container ul {
+  padding-left: 0px !important;
+}
+.mysidenav .container ul li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.mysidenav .container ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.closesidenav {
+  background-color: #1C3B70;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: auto;
+  display: block;
+}
+
+.mysidenav.show {
+  height: 100vh;
+  display: block;
+}
+
 footer {
   position: relative;
   background-image: url("../images/footer.avif");

@@ -49,3 +49,12 @@ $(document).ready(function () {
         fixedContentPos: false
     });
 });
+var sidenav = document.getElementById("sidenav")
+
+const showSidenav=()=>{
+    sidenav.classList.add("show")
+
+}
+const hideSidenav=()=>{
+    sidenav.classList.remove("show")
+}

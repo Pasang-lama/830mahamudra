@@ -10,7 +10,7 @@
 
 
 <section class="tour-details container mt-5">
-    <div class="row gy-4">
+    <div class="row gy-4">x
         <div class="col-lg-8 ">
             <div class="gallery">
                 <h2 class="mb-4">Gallery</h2>

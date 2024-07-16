@@ -28,8 +28,55 @@
         </div>
         <div class="col-4 d-flex justify-content-end right-btn">
           <a href="contact.php" class="custom-btn">Contact us</a>
-          <button><i class="bi bi-list"></i></button>
+          <button onclick="showSidenav()"><i class="bi bi-list"></i></button>
         </div>
       </div>
     </div>
   </header>
+  <div class="mysidenav" id="sidenav">
+    <div class="container">
+    <button onclick="hideSidenav()" class="closesidenav">Close</button>
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-heading">quick links</div>
+          <ul>
+            <li><a href="about.php">about us</a></li>
+            <li><a href=""> Our team</a></li>
+            <li><a href=""> gallery</a></li>
+            <li><a href=""> Travel Blogs</a></li>
+            <li><a href=""> B2B Partners</a></li>
+            <li><a href=""> Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-heading">Destination</div>
+          <ul>
+            <li><a href="">bhutan</a></li>
+            <li><a href="">Tibet</a></li>
+            <li><a href="">China</a></li>
+            <li><a href="">Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-heading">Destination</div>
+          <ul>
+            <li><a href="">bhutan</a></li>
+            <li><a href="">Tibet</a></li>
+            <li><a href="">China</a></li>
+            <li><a href="">Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-heading">quick links</div>
+          <ul>
+            <li><a href="about.php">about us</a></li>
+            <li><a href=""> Our team</a></li>
+            <li><a href=""> gallery</a></li>
+            <li><a href=""> Travel Blogs</a></li>
+            <li><a href=""> B2B Partners</a></li>
+            <li><a href=""> Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
